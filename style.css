@@ -74,6 +74,9 @@ body {
 .container .personajes .hongo {
   width: 12%;
 }
+.container .personajes .bowser {
+  width: 40%;
+}
 .container .modalInvitacion {
   background-color: white;
   border-radius: 10px;
@@ -102,7 +105,7 @@ body {
   z-index: 3;
   opacity: 0.8;
 }
-.container .pokebola {
+.container .star {
   position: absolute;
   left: 40%;
   top: 20%;
@@ -111,7 +114,7 @@ body {
 }
 .container .faltan {
   text-align: center;
-  font-size: 3em;
+  font-size: 2em;
 }
 .container .contador {
   background-color: rgb(255, 0, 0);

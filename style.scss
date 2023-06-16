@@ -88,6 +88,10 @@ body  {
     .hongo {
       width: 12%;
     }
+
+    .bowser {
+      width: 40%;
+    }
   }
 
   .modalInvitacion {
@@ -121,7 +125,7 @@ body  {
     opacity: .8;
   }
 
-  .pokebola {
+  .star {
     position: absolute;
     left: 40%;
     top: 20%;
@@ -131,7 +135,7 @@ body  {
 
   .faltan {
     text-align: center;
-    font-size: 3em;
+    font-size: 2em;
   }
 
   .contador {

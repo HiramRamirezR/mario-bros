@@ -7,22 +7,25 @@ const fecha = document.querySelector('.fecha')
 const invitacion = document.querySelector('.invitacion')
 const modalInvitacion = document.querySelector('.modalInvitacion')
 const modalContador = document.querySelector('.modalContador')
-const pokebola = document.querySelector('.pokebola')
+const star = document.querySelector('.star')
 
 const mario = document.querySelector('.mario')
 const hongo = document.querySelector('.hongo')
 const luigi = document.querySelector('.luigi')
 const peach = document.querySelector('.peach')
+const bowser = document.querySelector('.bowser')
 
 const musicas = ['/audio/musica.mp3', '/audio/musica2.mp3', '/audio/musica3.mp3']
 const musica = new Audio(musicas[Math.floor(Math.random() * musicas.length)])
 const marioSound = new Audio('/audio/mario.mp3')
 const hongoSound = new Audio('/audio/hongo.mp3')
 const luigiSound = new Audio('/audio/luigi.mp3')
-const peachSound = new Audio('/audio/peach.mp3')
+const peaches = ['/audio/peach.mp3', '/audio/peach2.mp3']
+const peachSound = new Audio(peaches[Math.floor(Math.random() * peaches.length)])
+const bowsers = ['/audio/bowser.mp3', '/audio/bowser2.mp3']
+const bowserSound = new Audio(bowsers[Math.floor(Math.random() * bowsers.length)])
 
 play.addEventListener('click', () => {
-  console.log(musica);
   musica.play()
   aPlay.classList.add('hidden')
   aPause.classList.toggle('hidden')
@@ -37,13 +40,13 @@ pause.addEventListener('click', () => {
 invitacion.addEventListener('click', () => {
   modalInvitacion.classList.toggle('hidden')
   modalContador.classList.add('hidden')
-  pokebola.classList.add('hidden')
+  star.classList.add('hidden')
 })
 
 fecha.addEventListener('click', () => {
   modalContador.classList.toggle('hidden')
   modalInvitacion.classList.add('hidden')
-  pokebola.classList.toggle('hidden')
+  star.classList.toggle('hidden')
 })
 
 mario.addEventListener('click', () => {
@@ -61,4 +64,8 @@ luigi.addEventListener('click', () => {
 peach.addEventListener('click', () => {
   peachSound.play()
   peach.classList.add('bounce-out-top')
+})
+bowser.addEventListener('click', () => {
+  bowserSound.play()
+  bowser.classList.add('bounce-out-top')
 })
