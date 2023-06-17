@@ -61,7 +61,7 @@ body {
   text-shadow: 0 0 10px #1c1a1a;
 }
 .container .personajes {
-  background-color: red;
+  background-color: rgb(21, 255, 0);
   width: 75%;
   display: flex;
   justify-content: space-between;
